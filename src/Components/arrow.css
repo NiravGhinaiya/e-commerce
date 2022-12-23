@@ -1,0 +1,72 @@
+.ai-usecase-textside-read-more {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0px;
+  }
+  .ai-usecase-textside-read-more-link {
+    font-size: 2.4rem;
+    padding-right: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .ai-usecase-textside-read-more-link a:hover,
+  a:focus,
+  a:active {
+    color: #1450a8;
+  }
+  .ai-usecase-textside-read-more-arrow {
+    cursor: pointer;
+    position: relative;
+  }
+  .arrow {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-size: contain;
+    left: 0px;
+  }
+  .arrow-second {
+    margin-left: 8px;
+  }
+  .arrow-image {
+    background-image: url("https://f.hubspotusercontent30.net/hubfs/9471087/animations-icons/arrow.svg");
+  }
+  .arrow {
+    animation-name: arrowmove;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    rotate: 180deg;
+  }
+  .arrow.arrow-first {
+    animation-name: arrowmove;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes arrowmove {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+    26% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @media (max-width: 767px) {
+    .arrow {
+      top: 0.9rem;
+    }
+  }
